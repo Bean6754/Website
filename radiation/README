@@ -1,0 +1,2 @@
+First run serial.sh on tty1 ESXi
+Second run gnuplot.sh on tty2 ESXi

@@ -1,0 +1,9 @@
+set terminal png font 'LiberationSans-Regular' 14 size 1920,1080
+set output "gnuplot.png"
+set xlabel "Time in Seconds"
+set ylabel "Counts per Minute"
+set style line 1 \
+	linecolor rgb '#0060ad' \
+	linetype 1 linewidth 1 \
+	pointtype 7 pointsize 1.5
+plot "log.txt" using 1:ytic(1) with lines linestyle 1
