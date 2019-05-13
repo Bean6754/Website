@@ -1,6 +1,6 @@
 set terminal png font 'LiberationSans-Regular' 14 size 1920,1080
-set output "gnuplot.png"
-set xlabel "Average across Hours"
+set output "gnuplot_full.png"
+set xlabel "Time in Seconds"
 set ylabel "Counts per Minute"
 set style line 1 \
 	linecolor rgb '#0060ad' \
@@ -9,4 +9,4 @@ set style line 1 \
 set grid
 show grid
 set yrange [0:]
-plot "log.txt" every 3600 using 1:ytic(1) with lines linestyle 1
+plot "log.txt" using 1:ytic(1) with lines linestyle 1
