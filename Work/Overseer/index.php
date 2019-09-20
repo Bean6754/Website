@@ -23,6 +23,6 @@
         document.getElementById('timeDiv').innerHTML = "<p>" + today.toLocaleTimeString("he-GB", optionsTime) + "</p>";
     </script>
     
-    <?php include('includes/status-he.php'); ?>
+    <?php include('includes/status.php'); ?>
 </body>
 </html>
